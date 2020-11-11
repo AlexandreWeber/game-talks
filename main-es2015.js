@@ -377,7 +377,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const config = {
-    url: 'http://localhost:4444',
+    url: 'https://game-talks.herokuapp.com',
     options: {}
 };
 let AppModule = class AppModule {
