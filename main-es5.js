@@ -424,7 +424,7 @@
             /* harmony import */ var _portinari_portinari_ui__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @portinari/portinari-ui */ "./node_modules/@portinari/portinari-ui/fesm2015/portinari-portinari-ui.js");
             /* harmony import */ var ngx_socket_io__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ngx-socket-io */ "./node_modules/ngx-socket-io/fesm2015/ngx-socket-io.js");
             var config = {
-                url: 'http://localhost:4444',
+                url: 'https://game-talks.herokuapp.com',
                 options: {}
             };
             var AppModule = /** @class */ (function () {
