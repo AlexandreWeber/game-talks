@@ -9,7 +9,7 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\r\n  <div *ngIf=\"userLoaded && !answerStopped && isGameReady\">\r\n    <div class=\"po-row po-md-12 po-lg-12 po-xl-12\">\r\n      <p class=\"question\">{{ questionText }}</p>\r\n    </div>\r\n\r\n    <div class=\"\">\r\n      <br/>\r\n\r\n      <div class=\"po-row\">\r\n        <app-answer id=\"answerOne\"\r\n                    name=\"answerOne\"\r\n                    class=\"po-lg-12 po-md-12 po-xl-12 po-sm-12\"\r\n                    color=\"#0c9abe\"\r\n                    (click)=\"validateAnswer(question.options[0])\"\r\n                    [option]=\"question.options[0].text\">\r\n        </app-answer>\r\n        <app-answer id=\"answerTwo\"\r\n                    class=\"po-lg-12 po-md-12 po-xl-12 po-sm-12\"\r\n                    name=\"answerTwo\"\r\n                    color=\"#ab4391\"\r\n                    (click)=\"validateAnswer(question.options[1])\"\r\n                    [option]=\"question.options[1].text\">\r\n        </app-answer>\r\n      </div>\r\n\r\n      <div class=\"po-row\">\r\n        <app-answer id=\"answerThree\"\r\n                    class=\"po-lg-12 po-md-12 po-xl-12 po-sm-12\"\r\n                    name=\"answerThree\"\r\n                    color=\"#ea9b3e\"\r\n                    (click)=\"validateAnswer(question.options[2])\"\r\n                    [option]=\"question.options[2].text\">\r\n        </app-answer>\r\n        <app-answer id=\"answerFour\"\r\n                    class=\"po-lg-12 po-md-12 po-xl-12 po-sm-12\"\r\n                    name=\"answerFour\"\r\n                    color=\"#abc249\"\r\n                    (click)=\"validateAnswer(question.options[3])\"\r\n                    [option]=\"question.options[3].text\">\r\n        </app-answer>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"next-question-box\" *ngIf=\"answerStopped || !isGameReady || endGame\">\r\n    <p *ngIf=\"!endGame\">{{ !isGameReady ? 'Aguarde o início do jogo': 'Aguarde a próxima pergunta'}}</p>\r\n    <p *ngIf=\"endGame\">{{ 'Fim de jogo :)'}}</p>\r\n  </div>\r\n</div>\r\n<po-modal #playerInfoModal\r\n          p-hide-close=\"true\"\r\n          p-size=\"sm\"\r\n          [p-primary-action]=\"primaryAction\"\r\n          p-title=\"Quem é você?\">\r\n\r\n  <po-input name=\"input\"\r\n            (keyup.enter)=\"savePlayerInfo()\"\r\n            p-label=\"Digite seu nome\"\r\n            [(ngModel)]=\"userName\">\r\n  </po-input>\r\n</po-modal>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\r\n  <div *ngIf=\"userLoaded && !answerStopped && isGameReady\">\r\n    <div class=\"po-row po-md-12 po-lg-12 po-xl-12\">\r\n      <p class=\"question\">{{ questionText }}</p>\r\n    </div>\r\n\r\n    <div class=\"\">\r\n      <br/>\r\n\r\n      <div class=\"po-row\">\r\n        <app-answer id=\"answerOne\"\r\n                    name=\"answerOne\"\r\n                    class=\"po-lg-12 po-md-12 po-xl-12 po-sm-12\"\r\n                    color=\"#0c9abe\"\r\n                    (click)=\"validateAnswer(question.options[0])\"\r\n                    [option]=\"question.options[0].text\">\r\n        </app-answer>\r\n        <app-answer id=\"answerTwo\"\r\n                    class=\"po-lg-12 po-md-12 po-xl-12 po-sm-12\"\r\n                    name=\"answerTwo\"\r\n                    color=\"#ab4391\"\r\n                    (click)=\"validateAnswer(question.options[1])\"\r\n                    [option]=\"question.options[1].text\">\r\n        </app-answer>\r\n      </div>\r\n\r\n      <div class=\"po-row\">\r\n        <app-answer id=\"answerThree\"\r\n                    class=\"po-lg-12 po-md-12 po-xl-12 po-sm-12\"\r\n                    name=\"answerThree\"\r\n                    color=\"#ea9b3e\"\r\n                    (click)=\"validateAnswer(question.options[2])\"\r\n                    [option]=\"question.options[2].text\">\r\n        </app-answer>\r\n        <app-answer id=\"answerFour\"\r\n                    class=\"po-lg-12 po-md-12 po-xl-12 po-sm-12\"\r\n                    name=\"answerFour\"\r\n                    color=\"#abc249\"\r\n                    (click)=\"validateAnswer(question.options[3])\"\r\n                    [option]=\"question.options[3].text\">\r\n        </app-answer>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"next-question-box\" *ngIf=\"answerStopped || !isGameReady || endGame\">\r\n    <p *ngIf=\"!endGame\">{{ !isGameReady ? 'Aguarde o início do jogo': 'Aguarde a próxima pergunta'}}</p>\r\n    <p *ngIf=\"endGame\">{{ 'Fim de jogo :)'}}</p>\r\n  </div>\r\n</div>\r\n<po-modal #playerInfoModal\r\n          p-hide-close=\"true\"\r\n          p-size=\"sm\"\r\n          [p-primary-action]=\"primaryAction\"\r\n          [p-secondary-action]=\"secondaryAction\"\r\n          p-title=\"Quem é você?\">\r\n\r\n  <po-input name=\"input\"\r\n            (keyup.enter)=\"savePlayerInfo()\"\r\n            p-label=\"Digite seu nome\"\r\n            [(ngModel)]=\"userName\">\r\n  </po-input>\r\n</po-modal>\r\n");
 
 /***/ }),
 
@@ -75,16 +75,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GameComponent", function() { return GameComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _portinari_portinari_ui__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @portinari/portinari-ui */ "./node_modules/@portinari/portinari-ui/fesm2015/portinari-portinari-ui.js");
-/* harmony import */ var ngx_socket_io__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ngx-socket-io */ "./node_modules/ngx-socket-io/fesm2015/ngx-socket-io.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _portinari_portinari_ui__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @portinari/portinari-ui */ "./node_modules/@portinari/portinari-ui/fesm2015/portinari-portinari-ui.js");
+/* harmony import */ var ngx_socket_io__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ngx-socket-io */ "./node_modules/ngx-socket-io/fesm2015/ngx-socket-io.js");
+
 
 
 
 
 let GameComponent = class GameComponent {
-    constructor(notification, socket) {
+    constructor(notification, socket, router) {
         this.notification = notification;
         this.socket = socket;
+        this.router = router;
         this.userName = '';
         this.userLoaded = false;
         this.answerStopped = false;
@@ -96,6 +99,10 @@ let GameComponent = class GameComponent {
         this.primaryAction = {
             action: () => this.savePlayerInfo(),
             label: 'Que comecem os jogos :)'
+        };
+        this.secondaryAction = {
+            action: () => this.navigateToAdmin(),
+            label: 'Acessar como ADMIN'
         };
     }
     ngOnInit() {
@@ -118,6 +125,9 @@ let GameComponent = class GameComponent {
             this.answerStopped = true;
         });
     }
+    navigateToAdmin() {
+        this.router.navigate(['admin']);
+    }
     savePlayerInfo() {
         if (this.userName !== '') {
             this.userLoaded = true;
@@ -139,8 +149,9 @@ let GameComponent = class GameComponent {
     }
 };
 GameComponent.ctorParameters = () => [
-    { type: _portinari_portinari_ui__WEBPACK_IMPORTED_MODULE_2__["PoNotificationService"] },
-    { type: ngx_socket_io__WEBPACK_IMPORTED_MODULE_3__["Socket"] }
+    { type: _portinari_portinari_ui__WEBPACK_IMPORTED_MODULE_3__["PoNotificationService"] },
+    { type: ngx_socket_io__WEBPACK_IMPORTED_MODULE_4__["Socket"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }
 ];
 tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('playerInfoModal', { static: true })

@@ -102,7 +102,7 @@ let AdminComponent = class AdminComponent {
         this.timer = 20;
         this.numberOfAnswers = 0;
         this.password = '';
-        this.questionsUrl = '';
+        this.questionsUrl = 'https://firebasestorage.googleapis.com/v0/b/kahoot-315c5.appspot.com/o/front.json?alt=media&token=2f4cfc4e-0955-4db7-8171-c27a79888718';
     }
     ngOnInit() {
         this.passwordModal.open();
