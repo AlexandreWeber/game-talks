@@ -146,13 +146,8 @@ let AdminComponent = class AdminComponent {
     setUpComponents() {
         this.pageActions = [
             {
-                label: 'Iniciar Jogo Front',
+                label: 'Iniciar Jogo',
                 action: () => this.startGame('front'),
-                disabled: () => this.password !== 'supersenha'
-            },
-            {
-                label: 'Iniciar Jogo Back',
-                action: () => this.startGame('back'),
                 disabled: () => this.password !== 'supersenha'
             }
         ];

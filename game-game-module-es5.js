@@ -83,7 +83,7 @@
                     this.questionText = "";
                     this.primaryAction = {
                         action: function () { return _this.savePlayerInfo(); },
-                        label: 'Que comecem os jogos :)'
+                        label: 'Entrar no jogo'
                     };
                     this.secondaryAction = {
                         action: function () { return _this.navigateToAdmin(); },

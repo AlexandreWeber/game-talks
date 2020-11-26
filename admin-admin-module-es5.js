@@ -160,13 +160,8 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
                     var _this = this;
                     this.pageActions = [
                         {
-                            label: 'Iniciar Jogo Front',
+                            label: 'Iniciar Jogo',
                             action: function () { return _this.startGame('front'); },
-                            disabled: function () { return _this.password !== 'supersenha'; }
-                        },
-                        {
-                            label: 'Iniciar Jogo Back',
-                            action: function () { return _this.startGame('back'); },
                             disabled: function () { return _this.password !== 'supersenha'; }
                         }
                     ];

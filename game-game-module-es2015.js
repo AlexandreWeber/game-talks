@@ -98,7 +98,7 @@ let GameComponent = class GameComponent {
         this.questionText = "";
         this.primaryAction = {
             action: () => this.savePlayerInfo(),
-            label: 'Que comecem os jogos :)'
+            label: 'Entrar no jogo'
         };
         this.secondaryAction = {
             action: () => this.navigateToAdmin(),
