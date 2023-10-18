@@ -377,7 +377,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const config = {
-    url: 'https://game-talks.herokuapp.com',
+    url: 'https://game-talks-server-lpys-git-main-alexandreweber.vercel.app',
     options: {}
 };
 let AppModule = class AppModule {
